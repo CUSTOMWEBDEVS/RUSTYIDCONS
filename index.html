@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RUSTYID</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">RUSTYID</div>
+    <div class="actions">
+      <button id="signInBtn" class="btn primary">Sign in with Steam</button>
+      <button id="signOutBtn" class="btn" hidden>Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card">
+      <h1>Rust+ informer for real users</h1>
+      <p>Sign in, pair servers with the companion app, and use <code>!time</code> in team chat without any JSON or PowerShell nonsense.</p>
+      <div class="row">
+        <button id="downloadCompanionBtn" class="btn primary">Download Companion</button>
+        <button id="refreshBtn" class="btn">Refresh Dashboard</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Account</h2>
+        <div id="accountBox" class="muted">Not signed in.</div>
+      </div>
+
+      <div class="card">
+        <h2>Pair a server</h2>
+        <ol>
+          <li>Open the companion app.</li>
+          <li>Click <strong>Connect Rust+</strong>.</li>
+          <li>Join a Rust server.</li>
+          <li>Click <strong>Pair with Server</strong> in Rust+.</li>
+        </ol>
+        <div id="pairingStatus" class="muted">Waiting for pairing.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Paired Servers</h2>
+      <div id="serversList" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>How it works</h2>
+      <ul>
+        <li>GitHub Pages hosts the site.</li>
+        <li>Google Apps Script + Sheets store users and pairings.</li>
+        <li>The always-on Node runtime keeps Rust+ sessions alive.</li>
+        <li>The desktop companion captures the pairing and sends it to the backend.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
