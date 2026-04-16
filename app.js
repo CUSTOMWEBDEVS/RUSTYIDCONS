@@ -1,5 +1,5 @@
 const CONFIG = {
-  gasUrl: 'PUT_YOUR_GAS_WEBAPP_URL_HERE',
+  gasUrl: 'https://script.google.com/macros/s/AKfycbw_CepIIVOIOQgD3uexenjlFd_0kazy38jC6wnCkdy_YYyEwk2j0ZiwMIk6UweN0LQwhw/exec',
   nodeUrl: 'PUT_YOUR_NODE_RUNTIME_URL_HERE',
   companionDownloadUrl: 'PUT_YOUR_COMPANION_DOWNLOAD_URL_HERE'
 };
